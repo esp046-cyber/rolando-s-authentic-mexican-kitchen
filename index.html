@@ -7,21 +7,7 @@
     <meta name="description" content="Chef Rolando's curated collection of 200 authentic Mexican recipes." />
     <meta name="theme-color" content="#f59e0b" />
     <link rel="manifest" href="./manifest.json" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              'rolando-primary': '#f59e0b',
-              'rolando-dark': '#78350f',
-              'rolando-bg': '#fffbeb',
-            },
-            fontFamily: { sans: ['system-ui', 'sans-serif'] }
-          }
-        }
-      }
-    </script>
+    
     <style>
       /* Hide scrollbar for clean UI */
       .no-scrollbar::-webkit-scrollbar { display: none; }
@@ -31,6 +17,7 @@
       /* Smooth Image Loading */
       img { transition: opacity 0.3s ease-in-out; }
     </style>
+<script type="importmap">
 {
   "imports": {
     "react": "https://aistudiocdn.com/react@^19.2.0",
@@ -44,12 +31,13 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-rolando-bg text-stone-800 antialiased select-none">
     <div id="root"></div>
-    <!-- Use relative path for Vite to resolve correctly during build -->
+    
+    <!-- MAIN ENTRY POINT: Relative path is critical for GitHub Pages -->
     <script type="module" src="./index.tsx"></script>
+    
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
@@ -63,6 +51,5 @@
         });
       }
     </script>
-<script type="module" src="/index.tsx"></script>
 </body>
 </html>
