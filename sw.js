@@ -1,7 +1,7 @@
 <change>
 <file>sw.js</file>
-<description>Clean sw.js - COPY ONLY THE CODE INSIDE</description>
-<content><![CDATA[const CACHE_NAME = 'rolando-kitchen-v46';
+<description>Clean sw.js - COPY ONLY THE CODE BELOW</description>
+<content><![CDATA[const CACHE_NAME = 'rolando-kitchen-v47';
 // Use relative paths for GitHub Pages support
 const urlsToCache = [
 './',
