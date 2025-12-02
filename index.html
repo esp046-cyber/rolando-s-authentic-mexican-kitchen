@@ -1,6 +1,6 @@
 <change>
 <file>index.html</file>
-<description>Restore clean, valid index.html structure</description>
+<description>Remove invalid importmap script to fix white screen crash</description>
 <content><![CDATA[<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,11 +46,11 @@ Code
 </html>]]></content>
 </change>
 sw.js
-I am bumping the version to v43 to make sure your browser loads this new HTML file immediately.
+FIXED: Bumped cache version to v44 to force your browser to ignore the old broken file and load the fixed one immediately.
 <change>
 <file>sw.js</file>
-<description>Bump cache version to v43 to force fresh load</description>
-<content><![CDATA[const CACHE_NAME = 'rolando-kitchen-v43';
+<description>Bump cache version to v44 to force fresh load</description>
+<content><![CDATA[const CACHE_NAME = 'rolando-kitchen-v44';
 // Use relative paths for GitHub Pages support
 const urlsToCache = [
 './',
