@@ -1,13 +1,13 @@
 <change>
 <file>vite.config.ts</file>
-<description>Set absolute base path for GitHub Pages stability</description>
+<description>Set relative base path for maximum compatibility</description>
 <content><![CDATA[import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
 plugins: [react()],
-// IMPORTANT: This must match your GitHub Repository name exactly, with slashes.
-base: '/rolando-s-authentic-mexican-kitchen/',
+// Use relative path './' so it works in any subfolder on GitHub Pages
+base: './',
 define: {
 'process.env.API_KEY': JSON.stringify(process.env.API_KEY)
 }
