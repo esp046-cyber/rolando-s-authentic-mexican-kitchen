@@ -6,7 +6,7 @@
     <title>Rolando's Authentic Mexican Kitchen</title>
     <meta name="description" content="Chef Rolando's curated collection of 200 authentic Mexican recipes." />
     <meta name="theme-color" content="#f59e0b" />
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="./manifest.json" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -49,14 +49,14 @@
 </head>
 <body class="bg-rolando-bg text-stone-800 antialiased select-none">
     <div id="root"></div>
-    <!-- Added version parameter to force reload of the module script -->
-    <script type="module" src="/index.tsx?v=32"></script>
+    <!-- Use relative path for Vite to resolve correctly during build -->
+    <script type="module" src="./index.tsx"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
+          // Use relative path for Service Worker
+          navigator.serviceWorker.register('./sw.js')
             .then(reg => {
-              // Check for updates on load
               reg.update();
               console.log('SW registered');
             })
