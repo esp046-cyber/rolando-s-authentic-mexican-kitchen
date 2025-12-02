@@ -1,4 +1,4 @@
-const CACHE_NAME = 'rolando-kitchen-v48';
+const CACHE_NAME = 'rolando-kitchen-v51';
 // Use relative paths for GitHub Pages support
 const urlsToCache = [
   './',
