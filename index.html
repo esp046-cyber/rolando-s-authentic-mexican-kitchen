@@ -1,47 +1,55 @@
-<change>
-<file>index.html</file>
-<description>Clean, valid HTML structure with no invalid text or import maps</description>
-<content><![CDATA[<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-<title>Rolando's Authentic Mexican Kitchen</title>
-<meta name="description" content="Chef Rolando's curated collection of 200 authentic Mexican recipes." />
-<meta name="theme-color" content="#f59e0b" />
-<link rel="manifest" href="./manifest.json" />
-code
-Code
-<style>
-  /* Hide scrollbar for clean UI */
-  .no-scrollbar::-webkit-scrollbar { display: none; }
-  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-  body { -webkit-tap-highlight-color: transparent; }
-  
-  /* Smooth Image Loading */
-  img { transition: opacity 0.3s ease-in-out; }
-</style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>Rolando's Authentic Mexican Kitchen</title>
+    <meta name="description" content="Chef Rolando's curated collection of 200 authentic Mexican recipes." />
+    <meta name="theme-color" content="#f59e0b" />
+    <link rel="manifest" href="./manifest.json" />
+    
+    <style>
+      /* Hide scrollbar for clean UI */
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      body { -webkit-tap-highlight-color: transparent; }
+      
+      /* Smooth Image Loading */
+      img { transition: opacity 0.3s ease-in-out; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "vite": "https://aistudiocdn.com/vite@^7.2.6",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
 </head>
 <body class="bg-rolando-bg text-stone-800 antialiased select-none">
-<div id="root"></div>
-code
-Code
-<!-- MAIN ENTRY POINT: Vite will replace this with the built JavaScript -->
-<script type="module" src="./index.tsx"></script>
-
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      // Use relative path for Service Worker
-      navigator.serviceWorker.register('./sw.js')
-        .then(reg => {
-          reg.update();
-          console.log('SW registered');
-        })
-        .catch(err => console.log('SW registration failed', err));
-    });
-  }
-</script>
+    <div id="root"></div>
+    
+    <!-- MAIN ENTRY POINT: Vite will replace this with the built JavaScript -->
+    <script type="module" src="./index.tsx"></script>
+    
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          // Use relative path for Service Worker
+          navigator.serviceWorker.register('./sw.js')
+            .then(reg => {
+              reg.update();
+              console.log('SW registered');
+            })
+            .catch(err => console.log('SW registration failed', err));
+        });
+      }
+    </script>
 </body>
-</html>]]></content>
-</change>
+</html>
