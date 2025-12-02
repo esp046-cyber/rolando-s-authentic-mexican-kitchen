@@ -70,4 +70,4 @@ npm run build
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
-*Created with ❤️ by Chef Rolando's Digital Team.*
+*Created with ❤️ by Chef Rolando's Digital Team.* 
