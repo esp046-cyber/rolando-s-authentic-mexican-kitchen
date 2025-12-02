@@ -7,7 +7,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
 plugins: [react()],
 // IMPORTANT: This must match your GitHub Repository name exactly, with slashes.
-base: '/rolando-s-authentic-mexican-kitchen/',
+base: 'rolando-s-authentic-mexican-kitchen',
 define: {
 'process.env.API_KEY': JSON.stringify(process.env.API_KEY)
 }
