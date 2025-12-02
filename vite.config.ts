@@ -1,6 +1,6 @@
 <change>
 <file>vite.config.ts</file>
-<description>Clean vite.config.ts - COPY ONLY THE CODE INSIDE</description>
+<description>Clean vite.config.ts - COPY ONLY THE CODE BELOW</description>
 <content><![CDATA[import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
