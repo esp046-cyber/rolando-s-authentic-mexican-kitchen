@@ -1,7 +1,7 @@
 <change>
 <file>sw.js</file>
-<description>Bump cache version to v38 to force fresh load</description>
-<content><![CDATA[const CACHE_NAME = 'rolando-kitchen-v38';
+<description>Bump cache version to v39 to force fresh load</description>
+<content><![CDATA[const CACHE_NAME = 'rolando-kitchen-v39';
 // Use relative paths for GitHub Pages support
 const urlsToCache = [
 './',
