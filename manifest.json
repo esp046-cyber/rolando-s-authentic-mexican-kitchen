@@ -1,0 +1,21 @@
+{
+  "short_name": "Rolando",
+  "name": "Rolando's Authentic Mexican Kitchen",
+  "icons": [
+    {
+      "src": "https://image.pollinations.ai/prompt/chef%20hat%20logo%20mexican%20restaurant%20icon%20minimalist%20flat%20vector%20gold%20on%20white?width=192&height=192&nologo=true",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://image.pollinations.ai/prompt/chef%20hat%20logo%20mexican%20restaurant%20icon%20minimalist%20flat%20vector%20gold%20on%20white?width=512&height=512&nologo=true",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#f59e0b",
+  "background_color": "#fffbeb",
+  "orientation": "portrait"
+}
