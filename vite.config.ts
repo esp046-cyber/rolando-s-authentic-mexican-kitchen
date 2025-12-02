@@ -1,6 +1,6 @@
 <change>
 <file>vite.config.ts</file>
-<description>Set relative base path for maximum compatibility</description>
+<description>Clean vite.config.ts - COPY ONLY THE CODE INSIDE</description>
 <content><![CDATA[import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
