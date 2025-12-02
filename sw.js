@@ -1,7 +1,7 @@
 <change>
 <file>sw.js</file>
-<description>Bump cache to v45 to force browser to drop the broken version</description>
-<content><![CDATA[const CACHE_NAME = 'rolando-kitchen-v45';
+<description>Clean sw.js - COPY ONLY THE CODE INSIDE</description>
+<content><![CDATA[const CACHE_NAME = 'rolando-kitchen-v46';
 // Use relative paths for GitHub Pages support
 const urlsToCache = [
 './',
